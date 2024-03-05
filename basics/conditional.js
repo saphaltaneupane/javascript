@@ -18,3 +18,20 @@ else{
     alert("You can now drive as you are above 18");
 }
 console.log("done")
+ // switch case
+let age=prompt("what is your age?")
+age=Number.parseInt(age)
+switch(age){
+    case 12: 
+    console.log("your age is 12")
+    break;
+    case 14:
+        console.log("your age is 14")
+        break;
+        default:
+            console.log("your age is not special")
+
+}
+ //ternary operators
+
+ console.log("you can",(a<18?"not drive":"drive"));
