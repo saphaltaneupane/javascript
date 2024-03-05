@@ -22,8 +22,14 @@ ass+=2;
 console.log(ass);
 console.log("comparision Operators: ");
 let comp1=6;
-let comp2=7;
+let comp2="6";
 console.log("comp1==comp2",comp1==comp2);
 console.log("comp1!=comp2",comp1!=comp2);
 console.log("comp1===comp2",comp1===comp2);
 console.log("comp1!==comp2",comp1!==comp2);
+console.log("Logical Operators: ");
+let x=5;
+let y=6;
+console.log(x<y && x==5)
+console.log(x<y || x==6)
+console.log(!false)
