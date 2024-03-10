@@ -31,5 +31,11 @@ const hello2=()=>{
 }
 let v=hello2()
 console.log(v)
-
+ 
+const sum2=(a,b)=>{
+    let c = a+b;
+    return c;
+}
+let y=sum2(1,3)
+console.log(y)
 
