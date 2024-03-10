@@ -30,8 +30,7 @@ switch(age){
         break;
         default:
             console.log("your age is not special")
-
-}
+        }
  //ternary operators
 
  console.log("you can",(a<18?"not drive":"drive"));
