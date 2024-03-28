@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{height:250px;
+            width:100px;
+            background-color: aqua;
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" name="JSDiv">This is a div
+        <ul>
+            List
+            <li>1222</li>
+            <li>1222</li>
+            <li>1222</li>
+            <li>1222</li>
+        </ul>
+    </div>
+    <p class="para"> This is a paragraph</p> 
+    <script>
+        let newBtn=document.createElement("button");
+        console.log(newBtn.innerText="Clickme!");
+        let div = document.querySelector("div");
+        // div.append(newBtn);// adds at end of the node(inside)
+        div.prepend(newBtn);//addds at the start of node(inside)
+        div.before(newBtn);
+        div.after(newBtn);
+
+        let newHeading =document.createElement("h1");
+        newHeading.innerHTML="<i>Hi, I am new!</i>";
+        document.querySelector("body").prepend(newHeading);
+
+
+
+        let para=document.querySelector("p");
+        para.remove();
+        
+    </script>
+</body>
+</html>
