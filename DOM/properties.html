@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="one">Hello</p>
+    <div>
+        <h3>Fruits</h3>
+        <ul>
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Litchi</li>
+        </ul>
+    </div>
+    <h1 style="visibility: hidden;">old heading</h1>
+    <script>
+        //tagName gives tag
+        console.log(one.tagName);
+        let firstelement=document.getElementById("one");
+    console.log(firstelement);
+       console.log(firstelement.tagName); // p tag
+     // innerText
+      let div=document.querySelector("div")
+      //get text
+      console.log(div.innerText); //prints text inside the whole tag
+      //set text
+    //   console.log(div.innerText="abcd");
+      //innerHtml
+      //get value
+      console.log(div.innerHTML);
+      //set value
+    //   console.log(div.innerHTML="<div>inner div</div>");
+    //textContent 
+    let heading =document.querySelector("h1");
+    console.log(heading.textContent); //hidden  can be seen which cant be seen through innerText
+    </script>
+</body>
+</html>
